@@ -28,19 +28,10 @@ Dirancang untuk digunakan oleh **developer**, **pentester**, dan **security rese
 - Library: `requests`, `rich`, `pyfiglet`
 
 ## ⚙️ Instalasi
-Lihat [SETUP.md](SETUP.md) untuk panduan instalasi lengkap.
+Lihat document [SETUP.md] untuk panduan instalasi lengkap.
 
 ## 🚀 Cara Penggunaan
-Lihat [PLAYBOOK.md](PLAYBOOK.md) untuk panduan penggunaan dan contoh hasil laporan.
-
-## 🧠 Struktur Folder
-pysec-auditor/
-│
-├── pysec_auditor.py
-├── requirements.txt
-├── README.md
-├── SETUP.md
-└── PLAYBOOK.md
+Lihat document [PLAYBOOK.md] untuk panduan penggunaan dan contoh hasil laporan.
 
 ## 🧩 Argumen CLI
 | Argumen | Deskripsi | Default |
