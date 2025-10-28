@@ -4,17 +4,17 @@ Panduan penggunaan praktis untuk melakukan audit web security menggunakan **PySe
 
 ## 📘 1. Audit Dasar
 ```bash
-python pysec_auditor.py -u https://example.com
+python run.py -u https://example.com
 ```
 
 ## ⚙️ 2. Audit dengan Timeout
 ```bash
-python pysec_auditor.py -u https://example.com -t 10
+python run.py -u https://example.com -t 10
 ```
 
 ## 💾 3. Simpan Laporan ke File JSON
 ```bash
-python pysec_auditor.py -u https://example.com -o hasil_audit.json
+python run.py -u https://example.com -o hasil_audit.json
 ```
 
 Contoh isi file JSON:
@@ -28,17 +28,17 @@ Contoh isi file JSON:
 
 ## 📄 4. Simpan Laporan ke File HTML
 ```bash
-python pysec_auditor.py -u https://example.com -o laporan.html
+python run.py -u https://example.com -o laporan.html
 ```
 
 ## 🧩 5. Bantuan CLI
 ```bash
-python pysec_auditor.py -h
+python run.py -h
 ```
 
 ## 🎯 6. Best Practice Audit
 ```bash
-python pysec_auditor.py -u https://targetsite.com -t 10 -o audit_target.json
+python run.py -u https://targetsite.com -t 10 -o audit_target.json
 ```
 
 ## 🧠 Tips Keamanan
