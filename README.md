@@ -29,7 +29,7 @@ MIT — Developed by Sardidev
 
 
 
-[![CI](https://github.com/otakukazzee/PySec-Auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/otakukazzee/PySec-Auditor/actions)
+[![Workflow](https://github.com/otakukazzee/PySec-Auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/otakukazzee/PySec-Auditor/actions)
 [![pytest](https://img.shields.io/badge/test-pytest-brightgreen)](https://docs.pytest.org/)
 
 ## Recommendations ✅
