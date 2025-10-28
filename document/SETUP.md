@@ -11,7 +11,7 @@ Panduan ini membantu kamu menginstal dan menjalankan **PySec Auditor** di sistem
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/sardidev/pysec-auditor.git
+git clone https://github.com/otakukazzee/PySec-Auditor.git
 cd pysec-auditor
 ```
 
@@ -20,16 +20,9 @@ cd pysec-auditor
 pip install -r requirements.txt
 ```
 
-Isi file `requirements.txt`:
-```
-requests
-rich
-pyfiglet
-```
-
 ### 3️⃣ Jalankan Tes Pertama
 ```bash
-python pysec_auditor.py -u https://example.com
+python run.py -u https://example.com
 ```
 
 Jika berhasil, akan muncul output seperti ini:
@@ -39,21 +32,12 @@ Jika berhasil, akan muncul output seperti ini:
 ...
 ```
 
-## 🧱 Struktur Proyek
-pysec-auditor/
-│
-├── pysec_auditor.py     # Script utama
-├── requirements.txt      # Daftar dependensi
-├── README.md             # Dokumentasi utama
-├── SETUP.md              # Panduan instalasi
-└── PLAYBOOK.md           # Panduan penggunaan
-
 ## 💡 Tips
 - Gunakan `python3` jika `python` tidak dikenali.  
 - Jika error SSL, pastikan sertifikat CA di sistem ter-update.  
 - Untuk menampilkan bantuan:
   ```bash
-  python pysec_auditor.py -h
+  python run.py -h
   ```
 
 ## ✅ Selesai
