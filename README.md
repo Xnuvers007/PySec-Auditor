@@ -1,51 +1,40 @@
-# 🛡️ PySec Auditor
-### Advanced HTTP & TLS Security Auditing Tool (Open Source Edition)
-Developed by **Sardidev** | MIT License
+# PySec Auditor 🔐
 
-## 📖 Deskripsi
-**PySec Auditor** adalah alat analisis keamanan web berbasis Python yang dapat memeriksa:
-- Konfigurasi **HTTP Header**
-- Validasi **CORS**
-- Keamanan **Cookie**
-- Informasi **SSL/TLS Certificate**
+PySec Auditor adalah toolkit audit keamanan HTTP & TLS yang dibuat untuk tujuan defensif dan edukasi.  
+Project ini open-source dengan lisensi **MIT**. Developed by Sardidev. ❤️
 
-Dirancang untuk digunakan oleh **developer**, **pentester**, dan **security researcher** guna meningkatkan keamanan aplikasi web secara cepat dan efisien.
+## Fitur utama
+- Audit header keamanan (HSTS, CSP, X-Frame-Options, dll)
+- Analisis atribut cookie (Secure, HttpOnly, SameSite)
+- Pemeriksaan CORS dasar
+- Deteksi eksposur file/direktori sensitif (.git, .env, robots.txt)
+- Tes dasar Path Traversal di parameter query
+- Informasi sertifikat TLS dan audit cipher suites
+- Ekspor hasil ke JSON/HTML
 
-## ✨ Fitur
-✅ Analisis otomatis:
-- Header Keamanan: CSP, HSTS, X-Frame-Options, X-Content-Type-Options, dll  
-- Validasi CORS  
-- Keamanan Cookie (`Secure`, `HttpOnly`)  
-- Inspeksi SSL/TLS  
-- Deteksi cipher lemah
+## Cara menjalankan
+1. Install dependensi (lihat `document/setup.md`)
+2. Jalankan: `python run.py -u example.com -o report.json -l id`
 
-✅ Output Laporan:
-- Format CLI (Rich)
-- Format JSON / HTML
+## Struktur proyek
+```
+PySec_Auditor/
+├── run.py
+├── src/
+└── document/
+```
 
-✅ Teknologi:
-- Python 3.9+
-- Library: `requests`, `rich`, `pyfiglet`
+## Lisensi
+MIT — Developed by Sardidev
 
-## ⚙️ Instalasi
-Lihat document [SETUP.md] untuk panduan instalasi lengkap.
 
-## 🚀 Cara Penggunaan
-Lihat document [PLAYBOOK.md] untuk panduan penggunaan dan contoh hasil laporan.
 
-## 🧩 Argumen CLI
-| Argumen | Deskripsi | Default |
-|----------|------------|----------|
-| `-u`, `--url` | URL target audit | Wajib |
-| `-t`, `--timeout` | Waktu tunggu (detik) | 5 |
-| `-o`, `--output` | File laporan (JSON/HTML) | Opsional |
+[![CI](https://github.com/your-repo/pysec_auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/your-repo/pysec_auditor/actions)
+[![pytest](https://img.shields.io/badge/test-pytest-brightgreen)](https://docs.pytest.org/)
 
-## 🪪 Lisensi
-MIT License  
-Copyright (c) 2025 **Sardidev**
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so.
-
-## ⚠️ Disclaimer
-Gunakan hanya untuk tujuan **legal** dan **edukatif**.  
-Penulis tidak bertanggung jawab atas penyalahgunaan alat ini.
+## Recommendations ✅
+- Run this tool only on assets you own or have explicit permission to audit.
+- Use in a controlled environment for education and defensive testing.
+- Integrate CI (the provided GitHub Actions) to run tests on PRs.
+- Consider adding runtime sanitization for untrusted input and rate-limiting for scanning loops.
+- For production usage, add logging, retries/backoff, and configuration file support.
