@@ -1,6 +1,6 @@
 {
     "Target": "mentari.unpam.ac.id",
-    "Audit_Time": "2025-11-01T18:11:22.935775",
+    "Audit_Time": "2025-11-01T19:05:01.020076",
     "Security_Headers": {
         "X-XSS-Protection": {
             "value": "1; mode=block",
