@@ -5,7 +5,7 @@ README = Path(__file__).with_name("README.md").read_text(encoding="utf-8")
 
 setup(
     name="pysec_auditor",
-    version="10.0.0",
+    version="10.8.0",
     description="PySec Auditor - HTTP & TLS defensive auditing toolkit",
     long_description=README,
     long_description_content_type="text/markdown",

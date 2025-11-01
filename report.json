@@ -1,0 +1,1146 @@
+{
+    "Target": "mentari.unpam.ac.id",
+    "Audit_Time": "2025-11-01T18:11:22.935775",
+    "Security_Headers": {
+        "X-XSS-Protection": {
+            "value": "1; mode=block",
+            "status": "OK"
+        },
+        "X-Content-Type-Options": {
+            "value": "nosniff",
+            "status": "OK"
+        },
+        "Strict-Transport-Security": {
+            "value": "MISSING/INSECURE",
+            "status": "CRITICAL MISSING (HSTS)"
+        },
+        "Content-Security-Policy": {
+            "value": "MISSING",
+            "status": "CRITICAL MISSING (CSP)"
+        },
+        "X-Frame-Options": {
+            "value": "SAMEORIGIN",
+            "status": "OK"
+        },
+        "Content-Type": {
+            "value": "text/html; charset=utf-8",
+            "status": "OK"
+        }
+    },
+    "Cookie_Audit": {
+        "status": "No Set-Cookie header found."
+    },
+    "Allowed_Methods": {
+        "allowed_methods": [],
+        "dangerous_methods": [],
+        "status_code": 405
+    },
+    "Exposure": {
+        "exposed_paths": [
+            {
+                "path": ".env",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".env.*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.env",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "config.php",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "wp-config.php",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.secret",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.token",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.json",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.yml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.yaml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.ini",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.conf",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.config",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.cfg",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.properties",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pem",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.key",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.crt",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.p12",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.der",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pfx",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.jks",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.asc",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "id_rsa",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "id_rsa.pub",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".netrc",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".aws/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".azure/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".gcp/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.vault",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pgp",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.gpg",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.kdbx",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.ssh/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.docker/config.json",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.htpasswd",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.sql",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.sqlite",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.sqlite3",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.db",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.dump",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.bak",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "backup/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "backups/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.tar",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.tar.gz",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.tgz",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.rar",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.zip",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.7z",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.backup",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.orig",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.rej",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.old",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.archive",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.log",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.log.*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.tmp",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.swp",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.cache",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "/tmp/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.pid",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.seed",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.out",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.err",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.trace",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.stack",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.crash",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.session",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".idea/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".vscode/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.iml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.code-workspace",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.sublime-*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".vagrant/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".DS_Store",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "Thumbs.db",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.~lock.*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.project",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.classpath",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.launch",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.settings/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.metadata/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.tmproj",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.nbproject/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "dist/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "build/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.class",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.jar",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.war",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.ear",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.o",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.obj",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.bin",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.exe",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.dll",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.so",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.dylib",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pdb",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.lib",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pyc",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pyo",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pyd",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "__pycache__/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.egg",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.egg-info",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.whl",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.apk",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.aab",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.ipa",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.app",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.dmg",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.msi",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.deb",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.rpm",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.vagrant/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.terraform/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "admin/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "login/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "setup/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "install/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "config/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "uploads/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "cache/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "tmp/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "session/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "sitemap.xml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "robots.txt",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".htaccess",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".htpasswd",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.user.ini",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.web.config",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.bak.*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.old.*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "node_modules/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "bower_components/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "package.json",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "package-lock.json",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "yarn.lock",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "pnpm-lock.yaml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "npm-debug.log",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".eslintcache",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".cypress/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".next/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".nuxt/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "out/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "dist/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.tsbuildinfo",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "__pycache__/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.py[cod]",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pyo",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pyd",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "env/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "venv/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "ENV/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "env.bak/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "venv.bak/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.coverage",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".coverage.*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "nosetests.xml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "pytest_cache/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".tox/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "pip-log.txt",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "pip-delete-this-directory.txt",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.class",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.jar",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.war",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.ear",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.iml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.gradle",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.class",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.log",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.hprof",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.jfr",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".github/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".gitlab-ci.yml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".circleci/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".travis.yml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".azure-pipelines.yml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".jenkins/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".buildkite/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".envrc",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".docker/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "docker-compose.yml",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.kube/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.k8s/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": "*.tfstate",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.tfstate.backup",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": ".terraform/",
+                "status": 200,
+                "method": "GET"
+            },
+            {
+                "path": ".DS_Store",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "Thumbs.db",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "desktop.ini",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.bak",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.old",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.swp",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.lock",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.cache",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.pid",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.log.*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.temp",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.seed",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.out",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.err",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.trace",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.stack",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.crash",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.session",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.sqlite3",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.bak.*",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.orig",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.rej",
+                "status": 200,
+                "method": "HEAD"
+            },
+            {
+                "path": "*.backup",
+                "status": 200,
+                "method": "HEAD"
+            }
+        ],
+        "protected_paths": [],
+        "not_found": []
+    },
+    "CORS": {
+        "status": "Tested (GET Request)",
+        "result": "Access-Control-Allow-Origin MISSING (Default OK)",
+        "aca_origin": "MISSING",
+        "aca_credentials": "MISSING"
+    },
+    "Leakage": {
+        "leaked_headers": {
+            "X-Powered-By": {
+                "value": "centminmod",
+                "warning": "Header X-Powered-By exposes technology or vendor details."
+            },
+            "Server": {
+                "value": "Apache",
+                "warning": "Server header exposes server/proxy details."
+            }
+        },
+        "status": "WARNING: Information leakage header found."
+    },
+    "Path_Traversal_Check": {
+        "status": "SKIPPED: No query parameters to test.",
+        "test_payload": null,
+        "vulnerability": "NOT DETECTED",
+        "details": []
+    },
+    "TLS_Info": {
+        "subject": "*.unpam.ac.id",
+        "issuer": "Sectigo Limited",
+        "valid_until": "2025-11-06",
+        "days_remaining": 5
+    },
+    "TLS_Cipher_Audit": {
+        "weak_ciphers_found": [],
+        "supported_ciphers_count": 0,
+        "status": "Koneksi TLS berhasil.",
+        "cipher_negotiated": [
+            "ECDHE-RSA-AES256-GCM-SHA384",
+            "TLSv1.2",
+            256
+        ],
+        "assessment": "OK: Server does not support known weak Cipher Suites."
+    }
+}
